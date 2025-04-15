@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Liste des Cartons</title></head>
+<body>
+  <h1>Cartons déclarés</h1>
+  <table border="1">
+    <tr><th>Couleur</th><th>Date & Heure</th></tr>
+    {% for carton in cartons %}
+      <tr><td>{{ carton[0] }}</td><td>{{ carton[1] }}</td></tr>
+    {% endfor %}
+  </table>
+  <a href="/"><button>Retour</button></a>
+</body>
+</html>
