@@ -50,5 +50,7 @@ def liste():
     conn.close()
     return render_template('liste.html', cartons=cartons)
 
-if __name__ == '__main__':
+# Ajoute ce bloc pour rendre l'app compatible avec Vercel en tant que fonction serverless
+if __name__ == "__main__":
     app.run(debug=True)
+
